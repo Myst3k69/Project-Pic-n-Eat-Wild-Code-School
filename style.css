@@ -118,7 +118,7 @@ margin-block-end: 5%;
 
 /* Footer Alex*/
 
-footer a{
+.footer_link{
   color:white;
 }
 
@@ -153,27 +153,74 @@ footer ul:nth-of-type(2){
   text-align:left;
 }
 
+
+/* Section Social Netowrks */
 footer ul:nth-of-type(3){ 
   flex:1;
   display:flex;
   text-align:right;
   justify-content:space-around;
   flex-wrap:wrap;
+  
 }
 
+
+
+
+.social-icons a{
+  
+  
+  font-size:32px;
+  display:inline-block;
+  line-height:48px;
+  width:48px;
+  height:45px;
+  text-align:center;
+    border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+
+
+
 .facebook:hover {
- color:blue;
- font-size:25px !important;
+ 
+  background-color:#3b5998 !important;
+  
 }
 
 .instagram:hover {
-  color:#FFD700;
-  font-size:25px !important;
+ 
+  
+  background-color:#fa0504 !important;
+  
+  
 }
 
 .pinterest:hover{
-  color:#e64306;
-  font-size:25px !important;
+ background-color:#cd2129;
+ color:white;
+ 
 }
 
+.facebook
+{
+  color: white;
+  background-color: #F08080;
+ 
+  
+ }
 
+ .instagram {
+
+ background-color: #F08080 !important; 
+ color:white;
+ }
+
+ .pinterest {
+color:white;
+background-color:#F08080;
+
+ }
+ 
