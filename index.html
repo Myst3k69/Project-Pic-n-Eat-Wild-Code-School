@@ -3,54 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Alexandra, Aurélien, Madalina">
+    <meta name="author" content="wilder" >
     <meta name="description" content="site de recettes de pique-nique">
+    <!-- Fonts header -->
+<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Pic'n eat</title>
 </head>
 <body>
-   <header>
-    </header>
+    <header> 
+        <h1><span class="light">Pic'N</span> Eat</h1>
+        <p>Mangez votre liberté</p>
+        <img class="logo" src="logo.png" alt="logo">       
+</header>
     <main class="grid_recette">
-            <div class="recette1">
-                <img src="" alt="">
-                <h2></h2>
+        <h2>MAIN</h2>
+        <div class="recette">
+            <h2 class="titre_recette">Avocat farci à la feta</h2>
+        </div>
+        <div class="recette">
+            <h2 class="titre_recette">Energy balls</h2>
+        </div>
+        <div class="recette">
+            <h2 class="titre_recette">Entrée feuilleté au saumon</h2>
+        </div>
+        <div class="recette">
+            <h2 class="titre_recette">Houmous</h2>
+        </div>
+        <div class="recette">
+            <h2 class="titre_recette">Salade de fruits</h2>
+        </div>
+        <div class="recette">
+            <h2 class="titre_recette">Sandwich au fromage grillé</h2>
+        </div>
+        <div class="recette">
+            <h2 class="titre_recette">Smoothies de fruits variés</h2>
+        </div>
+        <div class="recette">
+            <h2 class="titre_recette">Tartine fraîcheur</h2>
+        </div>
+        <div class="recette">
+            <h2 class="titre_recette">Wrap au poulet</h2>
+        </div>
+    </main>
+
+    <!-- Classe correspondante à notre block Catégories-->
+    <div class="categorize">
+        <h2>CATEGORIES</h2>
+
+        <!--partie correspondante au catégories à gauche – entre main et footer-->
+       
+            <div class="grande_categ">
+                <h2>Type de plat</h2>
+                <p>
+                    <label for="huey">Entrée</label>
+                    <input type="checkbox" id="huey" name="drone" value="huey">
+                    
+                    
+                </p>
+                <p>
+                    <label for="huey">Plat</label>
+                    <input type="checkbox">
+                </p>
+                <p>
+                    <label for="huey">Dessert</label>
+                    <input type="checkbox">
+                </p>
             </div>
-            <div class="recette2">
-                <img src="" alt="">
-                <h2></h2>
+            
+            <div class="grande_categ">
+                <h2>Préparation</h2>
+                <p>
+                    <label for="huey">Sandwich</label>
+                    <input type="checkbox" id="huey" name="drone" value="huey">
+                    
+                    
+                </p>
+                <p>
+                    <label for="huey">Tartinade</label>
+                    <input type="checkbox">
+                </p>
+                <p>
+                    <label for="huey">Tarte</label>
+                    <input type="checkbox">
+                </p>
+                <p>
+                    <label for="huey">Smoothy</label>
+                    <input type="checkbox">
+                </p>
             </div>
-            <div class="recette3">
-                <img src="" alt="">
-                <h2></h2>
+            
+            <div class="grande_categ">
+                <h2>Type de cuisine</h2>
+                <p>
+                    <label for="huey">Carnivore</label>
+                    <input type="checkbox" id="huey" name="drone" value="huey">
+                    
+                    
+                </p>
+                <p>
+                    <label for="huey">Végétarien</label>
+                    <input type="checkbox">
+                </p>
+                <p>
+                    <label for="huey">Végan</label>
+                    <input type="checkbox">
+                </p>
+                <p>
+                    <label for="huey">Healthy</label>
+                    <input type="checkbox">
+                </p>
+                <p>
+                    <label for="huey">Cuisine du monde</label>
+                    <input type="checkbox">
+                </p>
             </div>
-            <div class="recette4">
-                <img src="" alt="">
-                <h2></h2>
-            </div>
-            <div class="recette5">
-                <img src="" alt="">
-                <h2></h2>
-            </div>
-            <div class="recette6">
-                <img src="" alt="">
-                <h2></h2>
-            </div>
-            <div class="recette7">
-                <img src="" alt="">
-                <h2></h2>
-            </div>
-            <div class="recette8">
-                <img src="" alt="">
-                <h2></h2>
-            </div>
-            <div class="recette9">
-                <img src="" alt="">
-                <h2></h2>
-            </div>
-         </main>
-        <footer>
+            <div class="grande_categ">
+                <input type="submit" name="validation" class="styleButton">
+            </div> 
+             
+    </div>
+    
+    <footer>
+        <h2></h2>
+        <ul>
+          <li><a class="footer_link" href="#" title="About us">About us</a></li>
+        </ul>
+        <ul>
+          <li><a class="footer_link" href="#" title="Legal mentions">Legal mentions</a></li> 
+        </ul>
+      
+        <ul class="social-icons">
+            <li><a class="facebook" href="#" target="_blank" rel="noopener noreferrer"><i class="fab  fa-3x fa-facebook"></i></a>
+          	<li><a class="instagram" href="#" target="_blank" rel="noopener noreferrer" ><i class="fab fa-3x fa-instagram"></i></a>
+				<li><a class="pinterest" href="#" target="_blank" rel="noopener noreferrer" ><i class="fab fa-3x fa-pinterest"></i></a>
+        </ul>     
     </footer>
 </body>
 </html>
