@@ -35,65 +35,56 @@ body {
   header {
     grid-column: 1 / 6;
     grid-row: 1 / 3;
-    background-color: aqua;
+    /*background-color: aqua;*/
   }
-  
+
   /*Section recettes*/
 
-.grid_recette {
+.grid_recettes {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
   }
   .recette {
-    display: flex;
-    justify-content: space-between; 
-    flex: 1;
     background-color: grey;
-    width: 150px;
-    height: 150px; 
+    width: 350px;
+    height: 350px;
   }
   .titre_recette {
     flex: 1;
-    font-family: 'Euphoria Script', cursive;
     font-size: 30px;
   }
   main { 
-    grid-column: 1 / 6;
+    grid-column: 2 / 6;
     grid-row: 3 / 9;
-    background-color: blue;
+    /*background-color: blue;*/
   }
   .categorize {
     grid-column: 1;
     grid-row: 3 / 9;
-    background-color: chartreuse;
   }
   footer {
     grid-column: 1 / 6;
     grid-row: 9;
-    background-color: coral;
+    /*background-color: coral;*/
   }
-  
   .categorize {
   
     display:flex;
     flex-direction: column;
     justify-content: space-around;
     font-size: 30px;
-   
   }
-  
   .grande_categ {
   
     display:flex; 
     flex-direction: column;
     justify-content: space-around;
-    text-align: center;
-   
-  
+    text-align: center;  
   }
-  
-  
   
   input[type=checkbox], label {
   
@@ -102,14 +93,11 @@ body {
   
   label{margin-left: 10%;}
   
-  
   p{
     display:flex;
     font-size: 40px;
     
     }
-  
-  
   .styleButton{
     
     width:150px;
@@ -134,7 +122,7 @@ body {
   .styleButton:hover{
     color:white;
     background:#ff2e41;
-  }
+  }*/
   
   /* Footer Alex*/
   
