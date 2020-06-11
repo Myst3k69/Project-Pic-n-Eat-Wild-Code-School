@@ -1,5 +1,32 @@
 /* Ceci est notre fichier css pour le projet Pick N Eat */
 
+
+h1{
+  font-family: 'Euphoria Script', cursive;
+  font-size: 200px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: #397e0c;
+}
+.light {
+  color: #9bc83e;
+}
+header p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  display: grid;
+  place-items: center;
+  color: #e64306;
+  padding:0;
+}
+.logo {
+  width: 200px;
+  height: auto;
+  position:absolute;
+  left:0;
+  top: 10px;
+}
 body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
