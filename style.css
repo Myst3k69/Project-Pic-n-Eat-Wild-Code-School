@@ -1,1 +1,197 @@
 /* Ceci est notre fichier css pour le projet Pick N Eat */
+h1{
+    font-family: 'Euphoria Script', cursive;
+    font-size: 200px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #397e0c;
+  }
+  .light {
+    color: #9bc83e;
+  }
+  header p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    display: grid;
+    place-items: center;
+    color: #e64306;
+    padding:0;
+  }
+  .logo {
+    width: 200px;
+    height: auto;
+    position:absolute;
+    left:0;
+    top: 10px;
+  }
+
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(150px, auto);
+  }
+  header {
+    grid-column: 1 / 6;
+    grid-row: 1 / 3;
+    background-color: aqua;
+  }
+  
+  /*Section recettes*/
+
+.grid_recette {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .recette {
+    display: flex;
+    justify-content: space-between; 
+    flex: 1;
+    background-color: grey;
+    width: 150px;
+    height: 150px; 
+  }
+  .titre_recette {
+    flex: 1;
+    font-family: 'Euphoria Script', cursive;
+    font-size: 30px;
+  }
+  main { 
+    grid-column: 1 / 6;
+    grid-row: 3 / 9;
+    background-color: blue;
+  }
+  .categorize {
+    grid-column: 1;
+    grid-row: 3 / 9;
+    background-color: chartreuse;
+  }
+  footer {
+    grid-column: 1 / 6;
+    grid-row: 9;
+    background-color: coral;
+  }
+  
+  .categorize {
+  
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 30px;
+   
+  }
+  
+  .grande_categ {
+  
+    display:flex; 
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+   
+  
+  }
+  
+  
+  
+  input[type=checkbox], label {
+  
+    flex: 1;
+  }
+  
+  label{margin-left: 10%;}
+  
+  
+  p{
+    display:flex;
+    font-size: 40px;
+    
+    }
+  
+  
+  .styleButton{
+    
+    width:150px;
+      cursor:pointer;
+    text-transform:capitalize;
+   
+    border:none;
+      padding:6px 0 6px 0;
+      border-radius:2px;
+      box-shadow:3px 3px 12px #999;
+      
+      font:bold 30px Arial;
+   
+    align-self: center;
+    color:#ff2e41;
+  background-color: white;
+  margin-block-end: 5%;
+  
+  
+  }
+  
+  .styleButton:hover{
+    color:white;
+    background:#ff2e41;
+  }
+  
+  /* Footer Alex*/
+  
+  footer a{
+    color:white;
+  }
+  
+  .footer_link:hover{
+    color:lightgrey;
+  }
+  
+  footer ul li{
+    list-style:none;
+  }
+  
+  footer {
+    margin-top:1%;
+    background-color:#ff6f61;
+    display:flex;
+    font-style: italic;
+    flex-flow:row wrap;
+    color:white;
+    justify-content:flex-start;
+    align-items:center;
+  }
+  
+  footer ul:nth-of-type(1){
+    flex:1;
+    display:flex;
+    flex-flow:column wrap;
+    text-align:left;
+  }
+  
+  footer ul:nth-of-type(2){
+    flex:1;
+    text-align:left;
+  }
+  
+  footer ul:nth-of-type(3){ 
+    flex:1;
+    display:flex;
+    text-align:right;
+    justify-content:space-around;
+    flex-wrap:wrap;
+  }
+  
+  .facebook:hover {
+   color:blue;
+   font-size:25px !important;
+  }
+  
+  .instagram:hover {
+    color:#FFD700;
+    font-size:25px !important;
+  }
+  
+  .pinterest:hover{
+    color:#e64306;
+    font-size:25px !important;
+  }
