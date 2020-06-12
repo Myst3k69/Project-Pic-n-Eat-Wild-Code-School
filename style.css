@@ -42,6 +42,13 @@ body {
 
   /*Section recettes*/
 
+  img {
+
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+  }
+
 .grid_recettes {
     display: flex;
     flex-direction: row;
@@ -49,6 +56,8 @@ body {
     align-content: space-around;
     flex-wrap: wrap;
     height: 100%;
+    
+   
   }
   .recette {
     background-color: grey;
