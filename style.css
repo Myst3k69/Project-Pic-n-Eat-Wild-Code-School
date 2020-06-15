@@ -1,4 +1,7 @@
 /* Ceci est notre fichier css pour le projet Pick N Eat */
+
+
+/* Considérations générales */
 h1{
 
     font-family: 'Euphoria Script', cursive;
@@ -8,31 +11,10 @@ h1{
     margin-bottom: 0;
     color: #397e0c;
   }
-  .light {
-    color: #9bc83e;
-  }
-  header p {
-    font-family: 'Dancing Script', cursive;
-    font-size: 100px;
-    display: grid;
-    place-items: center;
-    color: #e64306;
-    padding:0;
-  }
-  .logo {
-    width: 200px;
-    height: auto;
-    position:absolute;
-    left:0;
-    top: 10px;
-  }
+  
 
-body {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 5px;
-    grid-auto-rows: minmax(150px, auto);
-  }
+  /* GRID Squelette CSS */
+
   header {
     grid-column: 1 / 6;
     grid-row: 1 / 3;
@@ -40,48 +22,43 @@ body {
     
   }
 
+  
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  grid-auto-rows: minmax(150px, auto);
+}
+
+
+main { 
+  grid-column: 2 / 6;
+  grid-row: 3 / 9;
+  /*background-color: blue;*/
+}
+
+
+
+.categorize {
+  grid-column: 1;
+  grid-row: 3 / 9;
+  /*background-color: chartreuse;*/
+}
+footer {
+  grid-column: 1 / 6;
+  grid-row: 9;
+  /*background-color: coral;*/
+}
+
+
   /*Section recettes*/
 
-  img {
-
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-  }
-
-.grid_recettes {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    height: 100%;
-    
    
-  }
-  .recette {
-    background-color: grey;
-    width: 350px;
-    height: 350px;
-  }
-  .titre_recette {
-    flex: 1;
-    font-size: 30px;
-  }
-  main { 
-    grid-column: 2 / 6;
-    grid-row: 3 / 9;
-    /*background-color: blue;*/
-  }
   .categorize {
     grid-column: 1;
     grid-row: 3 / 9;
   }
-  footer {
-    grid-column: 1 / 6;
-    grid-row: 9;
-    /*background-color: coral;*/
-  }
+  
   .categorize {
   
     display:flex;
@@ -135,7 +112,7 @@ body {
     background:#ff2e41;
   }*/
   
- 
+ /* Design du header */
 
 .light {
   color: #9bc83e;
@@ -150,6 +127,19 @@ header p {
   padding:0;
   margin-top:0;
 }
+.light {
+  color: #9bc83e;
+}
+header p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  display: grid;
+  place-items: center;
+  color: #e64306;
+  padding:0;
+}
+
+
 .logo {
   width: 200px;
   height: auto;
@@ -157,19 +147,25 @@ header p {
   margin-left: 50px;
   top: 40px;
 }
-body {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: minmax(150px, auto);
-}
+
 header {
   grid-column: 1 / 6;
   grid-row: 1 / 3;
   /*background-color: aqua;*/
 }
 
+
+
+  
 /*Section recettes*/
+
+img {
+
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
 .grid_recettes {
   display: flex;
@@ -191,22 +187,12 @@ header {
   font-size: 30px;
 }
 
-main { 
-  grid-column: 2 / 6;
-  grid-row: 3 / 9;
-  /*background-color: blue;*/
-}
-.categorize {
-  grid-column: 1;
-  grid-row: 3 / 9;
-  /*background-color: chartreuse;*/
-}
-footer {
-  grid-column: 1 / 6;
-  grid-row: 9;
-  /*background-color: coral;*/
-}
 
+
+
+
+
+/* Section Categories */
 .categorize {
   display:flex;
   flex-direction: column;
