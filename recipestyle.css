@@ -1,0 +1,164 @@
+/* Ceci est notre fichier css pour le projet Pick N Eat */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+
+
+body {
+display: grid;
+grid-template-columns: 4fr 6fr;
+grid-template-rows: 100px 800px 100px;
+grid-template-areas: 
+"header header"
+"aside section "
+"footer footer";
+grid-gap:20px;
+
+}
+
+header{
+    background-color: red;
+    grid-area: header;
+}
+
+.grid_pageRecipe {
+    background-color: pink;
+    grid-area: section;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.notation {
+    font-family: 'Euphoria Script', cursive; 
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    flex: 1;
+    background-color: green;
+    width: 100%;
+    text-align: center;
+}
+.tags {
+  flex: 1;
+  background-color: aqua;
+  width: 100%;
+  text-align: center;
+}
+.tag{
+  display: inline-block;
+  padding: 25px;
+}
+.zone_preparation {
+  flex: 2;
+  background-color: orange;
+}
+.zone_gauche{
+  width: 40%;
+  text-align: center;
+  float: left;
+  margin: 20px;
+}
+
+.zone_droite{
+  width: 40%;
+  text-align: justify;
+  float: right;
+  margin: 20px;
+}
+ 
+ .grid_outilsrecipe { 
+	display: grid;
+	grid-template-columns:1fr;
+	grid-template-areas: 
+	"section1"
+	"section2"
+	"section3";
+	background-color: yellow;
+   grid-area: aside;
+   text-align: center;
+}
+
+footer {
+    background-color: aqua;
+    grid-area: footer;
+}
+
+/* Partie Gauche sur les outils de la recette */
+
+.pax_timerecipe {
+	
+	background-color: white;
+	grid-area:section1;	
+	display: flex;
+	justify-content:space-around;
+	font-family: 'Euphoria Script', cursive; 
+	font-size: 20px;
+}
+ 
+.Ingredients {
+	
+	background-color: white;
+	grid-area:section2;
+	font-family: 'Euphoria Script', cursive, bold; 
+	font-size: 30px;	
+}
+
+.Ustensiles {
+	
+	background-color: white;
+	grid-area:section3;	
+	font-family: 'Euphoria Script', cursive, bold; 
+	font-size:30px;
+}
+
+
+.logo	{
+	
+	height: 150px;
+}
+
+
+.list_ingredient {
+	
+	font-family: 'Euphoria Script', cursive;
+	font-size:25px;
+}
+
+
+.tool_pictures {
+	
+	display: flex;
+	justify-content:space-around;
+}
+
+ul{
+	
+	list-style-type: none;
+}
+
+.tool_1 {
+	
+	width: 200px;
+}
+
+.tool_2 {
+	
+	width: 200px;
+}
+
+.tool_3 {
+	
+	width: 220px;
+}
+
+.pax_timerecipe p {
+	
+border: 1px solid grey;
+box-shadow: 3px 3px 0px darkgrey;
+border-radius: 30px;
+padding:20px 20px 20px 20px;
+height: 30%;
+
+}
