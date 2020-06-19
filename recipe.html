@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,10 @@
     <meta name="description" content="page recette site de recettes de pique-nique">
     
 	 <link rel="stylesheet" href="recipestyle.css">
-    <script src="script.js"></script>
+	<!-- Font Awesome icons feedback (free version)-->
+	<script src="https://fontawesome.com/v4.7.0/icon/star/js/all.js" crossorigin="anonymous"></script>
+	<script src="https://fontawesome.com/v4.7.0/icon/star-half-o/js/all.js" crossorigin="anonymous"></script>
+	 <script src="script.js"></script>
     
     <title>Pic'n eat</title>
     
@@ -22,41 +26,60 @@
 		
    
      
-    	<div class="grid_pageRecipe">
-			<div class="notation">
-    		<h1>Titre recette</h1>
-			<p>Note</p>
-			</div>
-    		<div class="tags">
-				<p class="tag">Tags</p>
-				<p class="tag">Tags</p>
-				<p class="tag">Tags</p>
-			</div>
-    		<div class="zone_preparation">
-				<div class="zone_gauche">
-				<img class="photo-recipe" src="http://placehold.jp/400x400.png" alt="photo_recipe1">
-				<p>Valeurs Nutritionnelles</p>
-			</div>
-				<div class="zone_droite">
-    				<h2>Préparation</h2>
-    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-					</p>
-    			</div>	
-			</div>
-		</div>	
+    
+	<div class="grid_pageRecipe">
+		<div class="notation">
+		<h1>Energy balls aux amandes</h1>
+		</div>
+		<div class="stars">
+		<ul class="horizontal_stars">
+			<li><a class="star" href="#" target="_blank" rel="noopener noreferrer">star<i class="fa fa-star" aria-hidden="true"></i></a></li>
+			<li><a class="star" href="#" target="_blank" rel="noopener noreferrer">star<i class="fa fa-star" aria-hidden="true"></i></a></li>
+			<li><a class="star" href="#" target="_blank" rel="noopener noreferrer">star<i class="fa fa-star" aria-hidden="true"></i></a></li>
+			<li><a class="star" href="#" target="_blank" rel="noopener noreferrer">star<i class="fa fa-star" aria-hidden="true"></i></a></li>
+			<li><a class="star" href="#" target="_blank" rel="noopener noreferrer">star<i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+		</ul>
+		</div>
+		<div class="tags">
+			<input type="checkbox" id="huey" name="drone" value="huey">
+			<label for="huey" class="tag">dessert</label>
+			<input type="checkbox" id="huey" name="drone" value="huey">
+			<label for="huey" class="tag">healthy</label>
+			<input type="checkbox" id="huey" name="drone" value="huey">
+			<label for="huey" class="tag">végan</label>
+		</div>
+		<div class="zone_preparation">
+			<div class="zone_gauche">
+			<img class="photo-recipe" src="images/energy-balls-aux-amandes.jpg" alt="photo_recipe1" width="400px" heiht="401px">
+			<br><p><strong>Valeurs Nutritionnelles</strong></p>
+		</div>
+			<div class="zone_droite">
+				<h2>Préparation</h2>
+				<ol>
+					<li>Laver les dattes et retirer les noyaux.</li>
+					<li>Dans un robot avec une lame en S mettre les flocons d'avoine, les dattes émiettées,
+					 l'huile et les amandes que vous aurez concassées au préalable  et mixer le tout 1 minute.</li>
+					<li>Former 12 petites boules entre vos mains.</li>
+					<li>Mettre la noix de coco dans un petit bol et tremper vos boules dedans
+					pour les décorer de noix de coco.</li>
+					<li>Se conserve dans une boite hermétique à température ambiante ou au frigo 1 semaine.</li>
+				</ol>
+				</p>
+			</div>	
+		</div>
+	</div>	
     	
 
-    
-   <!-- zone à gauche outils recette -->
+
+  <!-- zone à gauche outils recette -->
     
 	<div class="grid_outilsrecipe">
-<<<<<<< Updated upstream
+
 		<div class="pax_timerecipe"></div>
 		<div class="Ingredients">Ingredients</div>
 		<div class="Ustensiles">Ustensiles</div>
 	</div>
-=======
+
 	
 		<div class="pax_timerecipe">
 		
@@ -90,8 +113,11 @@
 				<img class="tool_3" src="images/robot_hachoir.png" alt="Tool_3">
 			</div>
 		</div>
+
 		</div>
->>>>>>> Stashed changes
+
+
+
     
     <footer>
 	   
@@ -120,3 +146,4 @@
 
 </body>
 </html>
+

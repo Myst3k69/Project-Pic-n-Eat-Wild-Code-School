@@ -1,76 +1,209 @@
 /* Ceci est notre fichier css pour le projet Pick N Eat */
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
 
 body {
 display: grid;
 grid-template-columns: 4fr 6fr;
-grid-template-rows: 100px 800px 100px;
+grid-template-rows: 200px 1000px 100px;
 grid-template-areas: 
 "header header"
 "aside section "
 "footer footer";
-grid-gap:20px;
+grid-gap:10px;
 
 }
 
 header{
-    background-color: red;
+    /*background-color: red;*/
     grid-area: header;
 }
 
+.logo {
+  height: 220px;
+  width: auto;
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 30px;
+}
 .grid_pageRecipe {
-    background-color: pink;
+    /*background-color: pink;*/
     grid-area: section;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
 }
 .notation {
-    font-family: 'Euphoria Script', cursive; 
-    font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px; 
-    flex: 1;
-    background-color: green;
-    width: 100%;
-    text-align: center;
-}
-.tags {
-  flex: 1;
-  background-color: aqua;
+  font-family: 'Euphoria Script', cursive; 
+  font-size: 30px;
+  /*background-color: green;*/
   width: 100%;
   text-align: center;
+  flex: 1;
+  align-items: start;
+  margin-top: -2%;
+  justify-content: flex-start;
+}
+.stars{
+  width: 100%;
+  text-align: center;
+}
+.horizontal_stars li {
+display: inline;
+font-size: 20px;
+}
+.tags {
+  /*background-color: aqua;*/
+  text-align: center;
+  flex: 1;
 }
 .tag{
   display: inline-block;
   padding: 25px;
+  font-size: 15px;
 }
 .zone_preparation {
-  flex: 2;
-  background-color: orange;
+  /*background-color: orange;*/
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  flex: 4;
+  font-size: 25px;
+  align-items: flex-start;
+
 }
 .zone_gauche{
-  width: 40%;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
   text-align: center;
-  float: left;
-  margin: 20px;
+  margin-left: 2%;
+  padding: 5px;
+  margin-right: 5%;
+}
+
+.photo-recipe{
+  flex: 2;
+  border-radius: 15px;
+}
+.zone_gauche p {
+  flex: 1;
+  text-align: center;
+  font-size: 15px;
 }
 
 .zone_droite{
-  width: 40%;
+  font-family: 'Ubuntu', sans-serif;
+  margin-left: 4%;
+  padding:5px;
+  justify-content: space-between;
+  flex: 3;
+  font-size: 15px;
   text-align: justify;
-  float: right;
-  margin: 20px;
+  margin-right: 6%;
 }
  
  .grid_outilsrecipe { 
-    background-color: yellow;
-    grid-area: aside;
+
+	display: grid;
+	grid-template-columns:1fr;
+	grid-template-areas: 
+	"section1"
+	"section2"
+	"section3";
+	background-color: yellow;
+   grid-area: aside;
+   text-align: center;
+
 }
 
 footer {
     background-color: aqua;
     grid-area: footer;
+
 }
+
+/* Partie Gauche sur les outils de la recette */
+
+.pax_timerecipe {
+	
+	background-color: white;
+	grid-area:section1;	
+	display: flex;
+	justify-content:space-around;
+	font-family: 'Euphoria Script', cursive; 
+	font-size: 20px;
+}
+ 
+.Ingredients {
+	
+	background-color: white;
+	grid-area:section2;
+	font-family: 'Euphoria Script', cursive, bold; 
+	font-size: 30px;	
+}
+
+.Ustensiles {
+	
+	background-color: white;
+	grid-area:section3;	
+	font-family: 'Euphoria Script', cursive, bold; 
+	font-size:30px;
+}
+
+
+.logo	{
+	
+	height: 150px;
+}
+
+
+.list_ingredient {
+	
+	font-family: 'Euphoria Script', cursive;
+	font-size:25px;
+}
+
+
+.tool_pictures {
+	
+	display: flex;
+	justify-content:space-around;
+}
+
+ul{
+	
+	list-style-type: none;
+}
+
+.tool_1 {
+	
+	width: 200px;
+}
+
+.tool_2 {
+	
+	width: 200px;
+}
+
+.tool_3 {
+	
+	width: 220px;
+}
+
+.pax_timerecipe p {
+	
+border: 1px solid grey;
+box-shadow: 3px 3px 0px darkgrey;
+border-radius: 30px;
+padding:20px 20px 20px 20px;
+height: 30%;
+
+}
+
