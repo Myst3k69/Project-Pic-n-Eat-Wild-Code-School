@@ -13,54 +13,25 @@
  <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
     <title>Pic'n eat</title>
 </head>
+
 <body>
+    <img class="logo" src="logo.png" alt="Logo Pic'n Eat">
     <header>
-        <h1><span class="light">Pic'N</span> Eat</h1>
-        <p>Mangez votre liberté</p>
-        <a href="index.html"><img class="logo" src="logo.png" alt="Logo Pic'n Eat"></a>
+
+        <div class="header_content">
+            <h1><span class="light">Pic'N</span> Eat</h1>
+             <p>Mangez votre liberté</p>
+        </div>   
+         <a href="index.html"><img class="picnic_logo" src="picniclogo3.png" alt="Logo Pic'n Eat"></a>
+        
+
     </header>
 
-    <main>
-        <div class="grid_recettes"> 
-            <div class="recette">
-                <img src="images/avocados.jpg"  alt="" >
-                <h2 class="titre_recette">Avocat farci à la feta</h2></a>
-            </div>
-            <div class="recette">
-                <img src="images/energy-balls-aux-amandes.jpg" alt="">
-                <h2 class="titre_recette">Energy balls</h2>
-            </div>
-            <div class="recette">
-                <img src="images/entree.png" alt="">
-                <h2 class="titre_recette">Entrée feuilleté au saumon</h2>
-            </div>
-            <div class="recette">
-                <img src="images/hummus2.jpg" alt="">
-                <h2 class="titre_recette">Houmous</h2>
-            </div>
-            <div class="recette">
-                <img src="images/salade-de-fruits-aux-épices.png" alt="">
-                <h2 class="titre_recette">Salade de fruits</h2>
-            </div>
-            <div class="recette">
-                <img src="images/sandwich.jpg" alt="">
-                <h2 class="titre_recette">Sandwich au fromage grillé</h2>
-            </div>
-            <div class="recette">
-                <img src="images/smoothier2.webp" alt="">
-                <h2 class="titre_recette">Smoothies de fruits variés</h2>
-            </div>
-            <div class="recette">
-                <img src="images/tartine5.jpg" alt="">
-                <h2 class="titre_recette">Tartine fraîcheur</h2>
-            </div>
-            <div class="recette">
-                <img src="images/wrap2.jpg" alt="">
-                <h2 class="titre_recette">Wrap au poulet</h2>
-            </div>
+    <main id="main">
+        <div id="recipeList" class="grid_recettes"> 
 
         </div>
     </main>
@@ -74,18 +45,18 @@
             <div class="grande_categ">
                 <h2>Type de plat</h2>
                 <p>
-                    <label for="huey">Entrée</label>
-                    <input type="checkbox" id="huey" name="drone" value="huey">
+                    <label for="entree">Entrée</label>
+                    <input type="checkbox" id="entree" name="entree" value="ENTREE">
                     
                     
                 </p>
                 <p>
-                    <label for="huey">Plat</label>
-                    <input type="checkbox">
+                    <label for="plat">Plat</label>
+                    <input type="checkbox" id="plat" name="plat" value="PLAT">
                 </p>
                 <p>
-                    <label for="huey">Dessert</label>
-                    <input type="checkbox">
+                    <label for="dessert">Dessert</label>
+                    <input type="checkbox" id="dessert" name="dessert" value="DESSERT">
                 </p>
             </div>
             
@@ -93,21 +64,21 @@
                 <h2>Préparation</h2>
                 <p>
                     <label for="huey">Sandwich</label>
-                    <input type="checkbox" id="huey" name="drone" value="huey">
+                    <input type="checkbox" id="huey" name="drone" value="SANDWICH">
                     
                     
                 </p>
                 <p>
                     <label for="huey">Tartinade</label>
-                    <input type="checkbox">
+                    <input type="checkbox" value="TARTINADE">
                 </p>
                 <p>
                     <label for="huey">Tarte</label>
-                    <input type="checkbox">
+                    <input type="checkbox" value="TARTE">
                 </p>
                 <p>
                     <label for="huey">Smoothy</label>
-                    <input type="checkbox">
+                    <input type="checkbox" value="SMOOTHY">
                 </p>
             </div>
             
@@ -115,47 +86,53 @@
                 <h2>Type de cuisine</h2>
                 <p>
                     <label for="huey">Carnivore</label>
-                    <input type="checkbox" id="huey" name="drone" value="huey">
+                    <input type="checkbox" id="huey" name="drone" value="CARNIVORE">
                     
                     
                 </p>
                 <p>
                     <label for="huey">Végétarien</label>
-                    <input type="checkbox">
+                    <input type="checkbox" value="VEGETARIEN">
                 </p>
                 <p>
                     <label for="huey">Végan</label>
-                    <input type="checkbox">
+                    <input type="checkbox" value="VEGAN">
                 </p>
                 <p>
                     <label for="huey">Healthy</label>
-                    <input type="checkbox">
+                    <input type="checkbox" value="HEALTHY">
                 </p>
                 <p>
                     <label for="huey">Cuisine du monde</label>
-                    <input type="checkbox">
+                    <input type="checkbox" value="CUISINEDUMONDE">
                 </p>
             </div>
-            <div class="grande_categ">
-                <input type="submit" name="validation" class="styleButton">
-            </div> 
-             
     </div>
     
     <footer>
-        <h2></h2>
-        <ul>
-          <li><a class="footer_link" href="#" title="About us">About us</a></li>
-        </ul>
-        <ul>
-          <li><a class="footer_link" href="#" title="Legal mentions">Legal mentions</a></li> 
-        </ul>
+        
+        <div class="containerf1" >
+            <ul>
+            <li><a class="footer_link" href="#" title="About us">About us</a></li>
+            <li><a  class="footer_link" href="#" title="Join Us">Join</a></li> 
+            <li><a  class="footer_link" href="#" title="Legal mentions">Legal mentions</a></li> 
+            </ul>
+            
+
+            <hr>
+            </div >
+        <div class="containerf2">
+            
+            <p class="copyright-text">Pic'n Eat &copy; 2020 All Rights Reserved by AMA.</p>
+        
+            <ul class="social-icons">
+                <li><a class="facebook" href="#" target="_blank" rel="noopener noreferrer"><i class="fab   fa-facebook"></i></a>
+                <li><a class="instagram" href="#" target="_blank" rel="noopener noreferrer" ><i class="fab  fa-instagram"></i></a>
+                    <li><a class="pinterest" href="#" target="_blank" rel="noopener noreferrer" ><i class="fab  fa-pinterest"></i></a>
+            </ul> 
+        </div>
       
-        <ul class="social-icons">
-            <li><a class="facebook" href="#" target="_blank" rel="noopener noreferrer"><i class="fab   fa-facebook"></i></a>
-          	<li><a class="instagram" href="#" target="_blank" rel="noopener noreferrer" ><i class="fab  fa-instagram"></i></a>
-				<li><a class="pinterest" href="#" target="_blank" rel="noopener noreferrer" ><i class="fab  fa-pinterest"></i></a>
-        </ul>     
     </footer> 
+    <script src="scripfilter.js"></script>
 </body>
 </html>
