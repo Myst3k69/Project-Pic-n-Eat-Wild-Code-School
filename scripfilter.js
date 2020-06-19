@@ -10,7 +10,7 @@ const recipes = [
         categories: ["ENTREE"]
     },
     {
-        imageSrc: "images/feuille_saumon2.png",
+        imageSrc: "images/entree.png",
         title: "Entrée feuilleté au saumon",
         categories: ["HEALTHY"]
     },
@@ -23,7 +23,7 @@ const recipes = [
     {
         imageSrc: "images/salade-de-fruits-aux-épices.png",
         title: "Salade de fruits",
-        categories: ["ENTREE","VEGAN"]
+        categories: ["DESSERT","VEGAN"]
     },
     {
         imageSrc: "images/sandwich.jpg",
