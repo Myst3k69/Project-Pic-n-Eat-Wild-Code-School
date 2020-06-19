@@ -66,11 +66,100 @@ header{
 }
  
  .grid_outilsrecipe { 
-    background-color: yellow;
-    grid-area: aside;
+
+	display: grid;
+	grid-template-columns:1fr;
+	grid-template-areas: 
+	"section1"
+	"section2"
+	"section3";
+	background-color: yellow;
+   grid-area: aside;
+   text-align: center;
+
 }
 
 footer {
     background-color: aqua;
     grid-area: footer;
+
 }
+
+/* Partie Gauche sur les outils de la recette */
+
+.pax_timerecipe {
+	
+	background-color: white;
+	grid-area:section1;	
+	display: flex;
+	justify-content:space-around;
+	font-family: 'Euphoria Script', cursive; 
+	font-size: 20px;
+}
+ 
+.Ingredients {
+	
+	background-color: white;
+	grid-area:section2;
+	font-family: 'Euphoria Script', cursive, bold; 
+	font-size: 30px;	
+}
+
+.Ustensiles {
+	
+	background-color: white;
+	grid-area:section3;	
+	font-family: 'Euphoria Script', cursive, bold; 
+	font-size:30px;
+}
+
+
+.logo	{
+	
+	height: 150px;
+}
+
+
+.list_ingredient {
+	
+	font-family: 'Euphoria Script', cursive;
+	font-size:25px;
+}
+
+
+.tool_pictures {
+	
+	display: flex;
+	justify-content:space-around;
+}
+
+ul{
+	
+	list-style-type: none;
+}
+
+.tool_1 {
+	
+	width: 200px;
+}
+
+.tool_2 {
+	
+	width: 200px;
+}
+
+.tool_3 {
+	
+	width: 220px;
+}
+
+.pax_timerecipe p {
+	
+border: 1px solid grey;
+box-shadow: 3px 3px 0px darkgrey;
+border-radius: 30px;
+padding:20px 20px 20px 20px;
+height: 30%;
+
+}
+
