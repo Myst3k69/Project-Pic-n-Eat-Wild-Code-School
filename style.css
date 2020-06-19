@@ -1,184 +1,139 @@
 /* Ceci est notre fichier css pour le projet Pick N Eat */
-
-
-/* Considérations générales */
 h1{
 
     font-family: 'Euphoria Script', cursive;
-    font-size: 200px;
-    text-align: center;
+    font-size: 1000%;
+    flex:1;
     margin-top: 20px;
-    margin-bottom: 0;
+    margin-bottom: -50px;
     color: #397e0c;
   }
-  
+  .light {
+    color: #9bc83e;
+      }
 
-  /* GRID Squelette CSS */
 
-  header {
-    grid-column: 1 / 6;
-    grid-row: 1 / 3;
+  .header_content{
+
+    display:flex;
+    flex-direction: column;
+    flex : 6;
+   
     
+    justify-content: space-around;
+    align-items: center;
+  }    
+
+  .header_content p {
+    font-family: 'Dancing Script', cursive;
+    font-size: 400%;
+    flex : 1;
+  
+    
+    color: #e64306;
     
   }
 
+.picnic_logo
+
+  {
+  flex : 1;
+  margin-right: -10%;
+  margin-left: -10%;;
   
+  width: 550px;
+  height: 220px;
+  align-self: center;
+  
+
+  } 
+
+  
+ 
 body {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
-  grid-auto-rows: minmax(150px, auto);
-}
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(150px, auto);
+  }
+  header {
+    grid-column: 2 / 6;
+    grid-row: 1 / 3;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+    
+    
+       
+  }
 
-
-main { 
-  grid-column: 2 / 6;
-  grid-row: 3 / 9;
-  /*background-color: blue;*/
-}
-
-
-
-.categorize {
-  grid-column: 1;
-  grid-row: 3 / 9;
-  /*background-color: chartreuse;*/
-}
-footer {
-  grid-column: 1 / 6;
-  grid-row: 9;
-  /*background-color: coral;*/
-}
-
-
-  /*Section recettes*/
-
-   
+  main { 
+    grid-column: 2 / 6;
+    grid-row: 3 / 9;
+    /*background-color: blue;*/
+  }
   .categorize {
     grid-column: 1;
     grid-row: 3 / 9;
   }
-  
-  .categorize {
-  
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    font-size: 30px;
+  footer {
+    grid-column: 1 / 6;
+    grid-row: 9;
+    /*background-color: coral;*/
   }
-  .grande_categ {
+
+  .logo {
+    grid-column: 1 ;
+    grid-row: 1 / 3;
+    margin-bottom: 10%;
+    
+    
+       }
   
-    display:flex; 
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;  
+  
+
+  /*Section recettes*/
+
+  .img_recette {
+
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10%;
+    
   }
+
+
+
+  .grid_recettes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+    
+  }
+  
+  
+  
+ 
   
   input[type=checkbox], label {
   
     flex: 1;
   }
   
-  label{margin-left: 10%;}
   
-  p{
-    display:flex;
-    font-size: 40px;
-    
-    }
-  .styleButton{
-    
-    width:150px;
-      cursor:pointer;
-    text-transform:capitalize;
-   
-    border:none;
-      padding:6px 0 6px 0;
-      border-radius:2px;
-      box-shadow:3px 3px 12px #999;
-      
-      font:bold 30px Arial;
-   
-    align-self: center;
-    color:#ff2e41;
-  background-color: white;
-  margin-block-end: 5%;
-  
-  
-  }
-  
-  .styleButton:hover{
-    color:white;
-    background:#ff2e41;
-  }*/
-  
- /* Design du header */
-
-.light {
-  color: #9bc83e;
-}
-header p {
-  font-family: 'Dancing Script', cursive;
-  font-weight: bold;
-  font-size: 60px;
-  display: grid;
-  place-items: center;
-  color: #e64306;
-  padding:0;
-  margin-top:0;
-}
-.light {
-  color: #9bc83e;
-}
-header p {
-  font-family: 'Dancing Script', cursive;
-  font-size: 100px;
-  display: grid;
-  place-items: center;
-  color: #e64306;
-  padding:0;
-}
-
-
-.logo {
-  width: 200px;
-  height: auto;
-  position:absolute;
-  margin-left: 50px;
-  top: 40px;
-}
-
-header {
-  grid-column: 1 / 6;
-  grid-row: 1 / 3;
-  /*background-color: aqua;*/
-}
 
 
 
-  
-/*Section recettes*/
-
-img {
-
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.grid_recettes {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: space-around;
-  flex-wrap: wrap;
-  height: 100%;
-}
 .recette {
-  background-color: grey;
+  
   width: 350px;
   height: 350px;
+  margin-bottom: 10%;
 }
 .titre_recette {
   flex: 1;
@@ -189,16 +144,18 @@ img {
 
 
 
-
-
-
-/* Section Categories */
 .categorize {
   display:flex;
   flex-direction: column;
   justify-content: space-around;
   font-family: 'Dancing Script', cursive;
   border-right: thick double #e74101;
+  border-top: thick double #e74101;
+  border-left: thick double #e74101;
+  border-bottom: thick double #e74101;
+  border-style: ridge;
+  border-color: #ff6f61;
+  
 }
 
 .grande_categ {
@@ -211,11 +168,6 @@ img {
 }
 
 
-
-input[type=checkbox], label {
-
-  flex: 1;
-}
 
 label{margin-left: 10%;}
 
@@ -258,9 +210,57 @@ margin-block-end: 5%;
 
 /* Footer Alex*/
 
+footer {
+  margin-top:1%;
+  background-color:#ff6f61;
+  font-style: italic;
+  color:white;
+  align-items:center;
+  display:flex;
+  flex-direction: column;
+  font-family: Georgia, serif;
+ 
+  font-size: 18px;
+}
+
+.containerf1 {
+
+  flex:1;
+  display:flex;
+  width:100%;
+  flex-direction: column;
+  
+  
+  
+  
+  
+}
+
+.containerf2 {
+
+  flex:1;
+  display:flex;
+  width:100%;
+  flex-direction: row;
+  
+}
+
+
 .footer_link{
   color:white;
+ 
+  margin-left: 15%;
+  flex:1;
 }
+
+.footer hr {
+  color:white;
+  
+   flex:1;
+
+}
+
+
 
 .footer_link:hover{
   color:lightgrey;
@@ -268,43 +268,38 @@ margin-block-end: 5%;
 
 footer ul li{
   list-style:none;
+  
 }
 
-footer {
-  margin-top:1%;
-  background-color:#ff6f61;
-  display:flex;
-  font-style: italic;
-  flex-flow:row wrap;
-  color:white;
-  justify-content:flex-start;
-  align-items:center;
+footer a {
+
+  text-decoration: none;
 }
 
-footer ul:nth-of-type(1){
-  flex:1;
-  display:flex;
-  flex-flow:column wrap;
-  text-align:left;
-}
+.footer_link:hover {
 
-footer ul:nth-of-type(2){
-  flex:1;
-  text-align:left;
-}
-
-
-/* Section Social Netowrks */
-footer ul:nth-of-type(3){ 
-  flex:1;
-  display:flex;
-  text-align:right;
-  justify-content:space-around;
-  flex-wrap:wrap;
+  color:#e74101 !important;
+  background-color: white;
   
 }
 
 
+
+
+
+
+/* Section Social Netowrks */
+
+
+.social-icons{
+
+flex:3;
+display:flex;
+flex-direction: row;
+justify-content:flex-end;
+margin-right: 15%;
+
+}
 
 
 .social-icons a{
@@ -323,6 +318,28 @@ footer ul:nth-of-type(3){
 }
 
 
+footer hr {
+
+  border-top-color:black;
+  opacity:0.5;
+  
+  width:70%;
+  
+   
+}
+
+.copyright-text
+{
+  
+  flex: 3;
+  justify-content: center;
+  font-size:20px !important;
+  margin-left:8%;
+}
+
+
+
+/* Social links */
 
 .facebook:hover {
  
