@@ -1,7 +1,4 @@
 /* Ceci est notre fichier css pour le projet Pick N Eat */
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
 
 
@@ -69,6 +66,7 @@ header{
 }
  
  .grid_outilsrecipe { 
+
 	display: grid;
 	grid-template-columns:1fr;
 	grid-template-areas: 
@@ -78,11 +76,13 @@ header{
 	background-color: yellow;
    grid-area: aside;
    text-align: center;
+
 }
 
 footer {
     background-color: aqua;
     grid-area: footer;
+
 }
 
 /* Partie Gauche sur les outils de la recette */
@@ -162,3 +162,4 @@ padding:20px 20px 20px 20px;
 height: 30%;
 
 }
+
