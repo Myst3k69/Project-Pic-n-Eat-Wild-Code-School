@@ -62,11 +62,12 @@ font-size: 20px;
   flex: 1;
 }
 .button {
+  font-family: 'Merriweather Sans', sans-serif;
   background-color: #F36C60; 
   color: white;
   font-weight: bold;
   border: 2px solid #f44336;
-  padding: 15px 32px;
+  padding: 10px 10px;
   text-align: center;
   display: inline-block;
   font-size: 18px;
@@ -74,10 +75,7 @@ font-size: 20px;
   cursor: pointer;
   border-radius: 4px;
 }
-.button {
-  background-color: #F36C60; 
-  color: white;
-}
+
 .zone_preparation {
   /*background-color: orange;*/
   display: flex;
@@ -118,7 +116,7 @@ font-size: 20px;
   padding:5px;
   justify-content: space-between;
   flex: 3;
-  font-size: 15px;
+  font-size: 20px;
   text-align: justify;
   margin-right: 6%;
 }
