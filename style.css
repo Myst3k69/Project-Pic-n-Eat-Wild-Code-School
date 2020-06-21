@@ -4,15 +4,18 @@ h1{
   font-family: 'Euphoria Script', cursive;
   font-size: 1000%;
   flex:1;
-  display:inline-flex;
-  margin-top: 20px;
+ 
+  
   margin-bottom: -70px;
   color: #397e0c;
+  font-weight: bold;
+  
   
 }
 .light2 {
   color: #9bc83e;
-  margin-right:50px;;
+  margin-right:50px;
+  font-weight: bold;
     }
 
   .light {
@@ -21,16 +24,26 @@ h1{
       
   }
 
+  .logo {
+
+flex : 1;
+
+width: 280px;
+height:250px;
+   
+  }
+
 
 .header_content{
 
   display:flex;
   flex-direction: column;
-  flex:3; 
+  margin-top:-5%;
   width:100%;
   height:100%;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-start;
+  align-items: center;
+  
   
   
   
@@ -40,40 +53,10 @@ h1{
   font-family: 'Dancing Script', cursive;
   font-size: 400%;
   flex : 1;
-  margin-right:30px;
-
-  
   color: #e64306;
   
 }
 
-
-
-
-.picnic_logo
-
-{
-flex:1;
-justify-self: flex-end;
-align-self: flex-end;
-width: 100%;
-height: 100%;
-
-
-} 
-
-.img_logo {
-
-  width: 500px;
-  height:220px;
-  align-content: center;
-  align-self: center;
-  text-align: center;
-  margin-right: auto;
-  margin-left:10%;
-  margin-top: 10%;
-  
-}
 
 
 
@@ -86,14 +69,48 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
   grid-auto-rows: minmax(150px, auto);
+  
 }
+
+.img_fondu {
+
+  flex : 3;
+
+
+}
+
+.brand_zone {
+
+  grid-column: 1 / 6;
+  grid-row: 1 / 1;
+ max-width: 100%;
+ max-height: 100%;
+
+ display: flex;
+ flex-direction: row;
+ 
+ 
+
+ 
+}
+
 header {
-  grid-column: 2 / 6;
-  grid-row: 1 / 3;
+  grid-column: 1 / 6;
+  grid-row: 2 / 5;
   display:flex;
   flex-direction: row;
  
+  background-image:url(images/Canva\ -\ Picnic.jpg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  
  
+
+    margin-bottom: 2%;
+ 
+  
  
   
   
@@ -103,12 +120,13 @@ header {
 
 main { 
   grid-column: 2 / 6;
-  grid-row: 3 / 9;
+  grid-row: 5 / 9;
   
+ 
 }
 .categorize {
   grid-column: 1;
-  grid-row: 3 / 9;
+  grid-row: 5 / 9;
 }
 footer {
   grid-column: 1 / 6;
@@ -116,17 +134,68 @@ footer {
   /*background-color: coral;*/
 }
 
-.logo {
-  grid-column: 1 ;
-  grid-row: 1 / 3;
-  margin-bottom: 10%;
-  
-  
-     }
 
 
 
 /*Section recettes*/
+
+
+
+/* TEST EFFET SURVOL SOURI IMAGES RECETTE  */
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+ 
+  transform: translate(118px ,-200px);
+
+  
+}
+
+.container:hover .img_recette {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:#e74101;
+  color: white;
+  font-size: 20px;
+  padding: 10px 25px;
+  font-weight: bold;
+  flex : 1;
+  width:65px;
+  border-radius: 7%;
+  border-style: solid;
+  border-color:#ff6f61 ;
+  
+ 
+}
+
+.text a {
+  text-decoration: none;
+  color:white;
+  
+}
+
+.text a:hover {
+ 
+  
+  
+}
+
+.text:hover{
+
+color:#ff6f61;
+opacity: 0.8;
+
+}
+
+/* Fin test effet */
 
 .img_recette {
 
@@ -135,6 +204,9 @@ footer {
   object-fit: cover;
   border-radius: 10%;
   border: 2px solid #e64306;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: .5s ease;
+  backface-visibility: hidden;
   
 }
 
@@ -182,14 +254,10 @@ font-size: 30px;
 .categorize {
 display:flex;
 flex-direction: column;
-justify-content: space-around;
+justify-content: space-between;
 font-family: 'Dancing Script', cursive;
 border-right: thick double #e74101;
-border-top: thick double #e74101;
-border-left: thick double #e74101;
-border-bottom: thick double #e74101;
-border-style: ridge;
-border-color: #ff6f61;
+
 
 }
 
