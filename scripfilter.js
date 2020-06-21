@@ -10,7 +10,7 @@ const recipes = [
         categories: ["ENTREE"]
     },
     {
-        imageSrc: "images/feuille_saumon2.png",
+        imageSrc: "images/entree.png",
         title: "Entrée feuilleté au saumon",
         categories: ["HEALTHY"]
     },
@@ -23,7 +23,7 @@ const recipes = [
     {
         imageSrc: "images/salade-de-fruits-aux-épices.png",
         title: "Salade de fruits",
-        categories: ["ENTREE","VEGAN"]
+        categories: ["DESSERT","VEGAN"]
     },
     {
         imageSrc: "images/sandwich.jpg",
@@ -53,8 +53,8 @@ const recipeList = document.getElementById("recipeList");
 const showRecipes = (recipes) => {
 
     return recipes.map((recipe)=>{return `<div class="recette">
-    <img class="img_recette" src=${recipe.imageSrc}  alt="" >
-    <h2 class="titre_recette">${recipe.title}</h2></a>
+    <a href="recipe.html"><img class="img_recette" src=${recipe.imageSrc}  alt="" ></a>
+    <h2 class="titre_recette">${recipe.title}</h2>
 </div>`}).join("");
     }
 
