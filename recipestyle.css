@@ -1,7 +1,6 @@
 /* Ceci est notre fichier css pour le projet Pick N Eat */
 @import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 
 body {
 display: grid;
@@ -50,20 +49,33 @@ header{
   width: 100%;
   text-align: center;
 }
+.star {
+  color: black;
+}
 .horizontal_stars li {
 display: inline;
 font-size: 20px;
 }
-.tags {
+.buttons {
   /*background-color: aqua;*/
   text-align: center;
   flex: 1;
 }
-.tag{
+.button {
+  font-family: 'Merriweather Sans', sans-serif;
+  background-color: #F36C60; 
+  color: white;
+  font-weight: bold;
+  border: 2px solid #f44336;
+  padding: 10px 10px;
+  text-align: center;
   display: inline-block;
-  padding: 25px;
-  font-size: 15px;
+  font-size: 18px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
 }
+
 .zone_preparation {
   /*background-color: orange;*/
   display: flex;
@@ -99,12 +111,12 @@ font-size: 20px;
 }
 
 .zone_droite{
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Merriweather Sans', sans-serif;
   margin-left: 4%;
   padding:5px;
   justify-content: space-between;
   flex: 3;
-  font-size: 15px;
+  font-size: 20px;
   text-align: justify;
   margin-right: 6%;
 }
