@@ -4,49 +4,80 @@ h1{
   font-family: 'Euphoria Script', cursive;
   font-size: 1000%;
   flex:1;
+  display:inline-flex;
   margin-top: 20px;
-  margin-bottom: -50px;
+  margin-bottom: -70px;
   color: #397e0c;
+  
 }
-.light {
+.light2 {
   color: #9bc83e;
+  margin-right:50px;;
     }
+
+  .light {
+
+      /*margin-left:100%; */
+      
+  }
 
 
 .header_content{
 
   display:flex;
   flex-direction: column;
-  flex : 6;
- 
+  flex:3; 
+  width:100%;
+  height:100%;
+  justify-content: center;
+  align-items: flex-end;
   
-  justify-content: space-around;
-  align-items: center;
+  
+  
 }    
 
 .header_content p {
   font-family: 'Dancing Script', cursive;
   font-size: 400%;
   flex : 1;
+  margin-right:30px;
 
   
   color: #e64306;
   
 }
 
+
+
+
 .picnic_logo
 
 {
-flex : 1;
-margin-right: -10%;
-margin-left: -10%;;
-
-width: 550px;
-height: 220px;
-align-self: center;
+flex:1;
+justify-self: flex-end;
+align-self: flex-end;
+width: 100%;
+height: 100%;
 
 
 } 
+
+.img_logo {
+
+  width: 500px;
+  height:220px;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+  margin-right: auto;
+  margin-left:10%;
+  margin-top: 10%;
+  
+}
+
+
+
+
 
 
 
@@ -61,7 +92,9 @@ header {
   grid-row: 1 / 3;
   display:flex;
   flex-direction: row;
-  align-items: flex-end;
+ 
+ 
+ 
   
   
   
@@ -71,7 +104,7 @@ header {
 main { 
   grid-column: 2 / 6;
   grid-row: 3 / 9;
-  /*background-color: blue;*/
+  
 }
 .categorize {
   grid-column: 1;
@@ -104,6 +137,7 @@ footer {
   border: 2px solid #e64306;
   
 }
+
 
 
 
