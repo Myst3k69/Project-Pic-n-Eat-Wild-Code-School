@@ -53,7 +53,11 @@ const recipeList = document.getElementById("recipeList");
 const showRecipes = (recipes) => {
 
     return recipes.map((recipe)=>{return `<div class="recette">
+    <div class="container">
     <a href="recipe.html"><img class="img_recette" src=${recipe.imageSrc}  alt="" ></a>
+    <div class="middle">
+    <div class="text"><a href="recipe.html">Détails</a></div></div>
+    </div>
     <h2 class="titre_recette">${recipe.title}</h2>
 </div>`}).join("");
     }
