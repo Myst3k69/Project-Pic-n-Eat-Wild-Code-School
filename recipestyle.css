@@ -45,17 +45,21 @@ header{
   margin-top: -2%;
   justify-content: flex-start;
 }
-.stars{
-  width: 100%;
-  text-align: center;
+/*stars*/
+.fa
+{
+  font-size:30px !important;
+  cursor:pointer;
 }
-.star {
-  color: black;
+.checked
+{
+color:red;
 }
-.horizontal_stars li {
-display: inline;
-font-size: 20px;
+.unchecked
+{
+color:black;
 }
+
 .buttons {
   /*background-color: aqua;*/
   text-align: center;
