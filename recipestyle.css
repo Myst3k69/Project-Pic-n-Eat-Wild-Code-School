@@ -46,10 +46,11 @@ header{
   margin-top: -2%;
   justify-content: flex-start;
 }
-/*stars*/
+
 .stars{
   margin-bottom: 4%;
 }
+
 .fa
 {
   font-size:30px !important;
@@ -63,6 +64,7 @@ color:red;
 {
 color:black;
 }
+
 .buttons {
   /*background-color: aqua;*/
   text-align: center;
@@ -155,24 +157,24 @@ footer {
 	grid-area:section1;	
 	display: flex;
 	justify-content:space-around;
-	font-family: 'Euphoria Script', cursive; 
-	font-size: 20px;
+	font-family: 'Merriweather Sans', sans-serif; 
+	font-size: 15px;
 }
  
 .Ingredients {
 	
 	background-color: white;
 	grid-area:section2;
-	font-family: 'Euphoria Script', cursive, bold; 
-	font-size: 30px;	
+	font-family:'Merriweather Sans', sans-serif; 
+	font-size: 20px;	
 }
 
 .Ustensiles {
 	
 	background-color: white;
 	grid-area:section3;	
-	font-family: 'Euphoria Script', cursive, bold; 
-	font-size:30px;
+	font-family: 'Merriweather Sans', sans-serif; 
+	font-size:20px;
 }
 
 
@@ -184,7 +186,7 @@ footer {
 
 .list_ingredient {
 	
-	font-family: 'Euphoria Script', cursive;
+	font-family: 'Merriweather Sans', sans-serif;
 	font-size:25px;
 }
 
@@ -212,7 +214,27 @@ ul{
 
 .tool_3 {
 	
-	width: 220px;
+	width: 250px;
+}
+
+.tool_4 {
+  margin-bottom: 10px;
+  width:120px ;
+}
+
+.tool_5 {
+
+  width: 100px ;
+}
+
+.tool_6 {
+
+  width: 100px ;
+}
+
+.tool_7{
+
+  width:50px ;
 }
 
 .pax_timerecipe p {
@@ -222,6 +244,7 @@ box-shadow: 3px 3px 0px darkgrey;
 border-radius: 30px;
 padding:20px 20px 20px 20px;
 height: 30%;
+width: 30%;
 
 }
 
@@ -303,7 +326,7 @@ footer {
   
   
   
-  /* Section Social Netowrks */
+  /* Section Social Networks */
   
   
   .social-icons{
