@@ -89,7 +89,7 @@ color:black;
   /*background-color: orange;*/
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 20px;
   margin-left: 5%;
   flex: 4;
@@ -97,6 +97,7 @@ color:black;
   align-items: center;
 
 }
+/* Photo et valeurs nutritionnelles */
 .zone_gauche{
   margin-top: 3%;
   display: flex;
@@ -104,29 +105,49 @@ color:black;
   /* justify-content: space-between; */
   flex: 1;
   text-align: center;
+  font-size: 15px;
+  font-family: 'Merriweather Sans', sans-serif; 
   margin-left: 2%;
   padding: 5px;
   margin-right: 5%;
+
 }
 
 .photo-recipe{
   flex: 2;
   border-radius: 15px;
+  padding: 20px;
 }
-.zone_gauche p {
+/* .zone_gauche p {
   text-align: center;
   font-size: 15px;
-}
+} */
 
 .zone_droite{
   font-family: 'Merriweather Sans', sans-serif;
-  margin-left: 4%;
-  padding:5px;
+  margin-left: 10%;
+  padding: 10px;
   justify-content: space-between;
   flex: 3;
   font-size: 20px;
   text-align: justify;
-  margin-right: 6%;
+  margin-right: 15%;
+}
+
+/* Couleur différente pour les chiffres */
+ol li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+}
+ol li:before {
+  color: #F08080;
+  content: counter(list) ".";
+  left: -32px;
+  position: absolute;
+  text-align: right;
+  font-weight: bold;
+  width: 26px;
 }
  
  .grid_outilsrecipe { 
