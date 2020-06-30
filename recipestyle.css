@@ -5,7 +5,7 @@
 body {
 display: grid;
 grid-template-columns: 4fr 6fr;
-grid-template-rows: 200px 1000px 200px;
+/* grid-template-rows: 200px 1000px 200px; */
 grid-template-areas: 
 "header header"
 "aside section "
@@ -22,16 +22,17 @@ header{
 .logo {
   height: 220px;
   width: auto;
-  position: absolute;
+  /* position: absolute; */
   margin-left: 200px;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 .grid_pageRecipe {
     /*background-color: pink;*/
     grid-area: section;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     flex-direction: column;
 }
 .notation {
@@ -45,7 +46,11 @@ header{
   margin-top: -2%;
   justify-content: flex-start;
 }
-/*stars*/
+
+.stars{
+  margin-bottom: 4%;
+}
+
 .fa
 {
   font-size:30px !important;
@@ -89,14 +94,14 @@ color:black;
   margin-left: 5%;
   flex: 4;
   font-size: 25px;
-  align-items: flex-start;
+  align-items: center;
 
 }
 .zone_gauche{
   margin-top: 3%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex: 1;
   text-align: center;
   margin-left: 2%;
@@ -109,7 +114,6 @@ color:black;
   border-radius: 15px;
 }
 .zone_gauche p {
-  flex: 1;
   text-align: center;
   font-size: 15px;
 }
@@ -174,10 +178,10 @@ footer {
 }
 
 
-.logo	{
+/* .logo	{
 	
 	height: 150px;
-}
+} */
 
 
 .list_ingredient {
