@@ -21,13 +21,13 @@ header{
   display:flex;
   flex-direction: row;
   background-image: url("images/picnic.png");
-  height: 100px;
+  height: 200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   background-position: center;
   background-size: cover;
   margin-bottom: 2%;
-   
+  opacity: 60%;
 }
 
 .logo {
