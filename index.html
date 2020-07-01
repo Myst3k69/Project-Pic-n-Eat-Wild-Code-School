@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="wilder" >
+    <meta name="description" content="site de recettes de pique-nique">
+     <!-- Fonts header -->
+<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+ <!-- Font Awesome icons footer (free version)-->
+ <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+ 
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Pic'n eat</title>
+</head>
+
+<body>
+    
+    <div class="brand_zone">
+        <a href="index.html"><img class="logo" src="images/logo2.png" alt="Logo Pic'n Eat"></a>
+
+        
+       <div class="header_content">
+            <h1 class="light"><span class="light2" >Pic'N</span> Eat</h1>
+        
+             <p>Mangez votre liberté</p>
+                     
+             
+             <div class="img_fondu"></div>
+        </div>  
+        
+         
+       
+        
+    </div>
+    
+    <header >
+
+     
+
+
+        
+
+    </header>
+
+    <main id="main">
+        <div id="recipeList" class="grid_recettes"> 
+
+        </div>
+    </main>
+
+  
+</div>
+    <!-- Classe correspondante à notre block Catégories-->
+    <div class="categorize">
+        
+
+        <!--partie correspondante au catégories à gauche – entre main et footer-->
+       
+            <div class="grande_categ">
+                <h2>Type de plat</h2>
+                <p>
+                    <label for="entree">Entrée</label>
+                    <input type="checkbox" id="entree" name="entree" value="ENTREE">
+                    
+                    
+                </p>
+                <p>
+                    <label for="plat">Plat</label>
+                    <input type="checkbox" id="plat" name="plat" value="PLAT">
+                </p>
+                <p>
+                    <label for="dessert">Dessert</label>
+                    <input type="checkbox" id="dessert" name="dessert" value="DESSERT">
+                </p>
+            </div>
+            
+            <div class="grande_categ">
+                <h2>Préparation</h2>
+                <p>
+                    <label for="huey">Sandwich</label>
+                    <input type="checkbox" id="huey" name="drone" value="SANDWICH">
+                    
+                    
+                </p>
+                <p>
+                    <label for="huey">Tartinade</label>
+                    <input type="checkbox" value="TARTINADE">
+                </p>
+                <p>
+                    <label for="huey">Tarte</label>
+                    <input type="checkbox" value="TARTE">
+                </p>
+                <p>
+                    <label for="huey">Smoothy</label>
+                    <input type="checkbox" value="SMOOTHY">
+                </p>
+            </div>
+            
+            <div class="grande_categ">
+                <h2>Type de cuisine</h2>
+                <p>
+                    <label for="huey">Carnivore</label>
+                    <input type="checkbox" id="huey" name="drone" value="CARNIVORE">
+                    
+                    
+                </p>
+                <p>
+                    <label for="huey">Végétarien</label>
+                    <input type="checkbox" value="VEGETARIEN">
+                </p>
+                <p>
+                    <label for="huey">Végan</label>
+                    <input type="checkbox" value="VEGAN">
+                </p>
+                <p>
+                    <label for="huey">Healthy</label>
+                    <input type="checkbox" value="HEALTHY">
+                </p>
+                <p>
+                    <label for="huey">Cuisine du monde</label>
+                    <input type="checkbox" value="CUISINEDUMONDE">
+                </p>
+                <p id="wishlist"><a  id="myBtn">Liste d'envies</a></p>
+            </div>
+            
+    </div>
+    
+    <footer>
+        
+        <div class="containerf1" >
+            <ul>
+               
+            <li><a class="footer_link" href="#" title="About us">About us</a></li>
+            <li><a  class="footer_link" href="#" title="Join Us">Join</a></li> 
+            <li><a  class="footer_link" href="#" title="Legal mentions">Legal mentions</a></li> 
+            </ul>
+            
+
+            <hr>
+            </div >
+        <div class="containerf2">
+            
+            <p class="copyright-text">Pic'n Eat &copy; 2020 All Rights Reserved by AMA.</p>
+        
+            <ul class="social-icons">
+                <li><a id="facebook"class="facebook" href="#" target="_blank" rel="noopener noreferrer"><i class="fab   fa-facebook"></i></a>
+                <li><a class="instagram" href="#" target="_blank" rel="noopener noreferrer" ><i class="fab  fa-instagram"></i></a>
+                <li><a class="pinterest" href="#" target="_blank" rel="noopener noreferrer" ><i class="fab  fa-pinterest"></i></a>
+            </ul> 
+        </div>
+      
+    </footer> 
+
+      
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content">
+  <div class="modal-header">
+    <span class="close">&times;</span>
+    <h2>Vos recettes préférées </h2>
+  </div>
+  <div id="innerModal" class="modal-body">
+   <h2> CONTENT</h2>
+   <main id="main">
+    <div id="recipeList" class="grid_recettes"> 
+
+    </div>
+</main>
+  </div>
+  <div class="modal-footer">
+    <h3>Modal Footer</h3>
+  </div>
+</div>
+    <script src="scripfilter.js"></script>
+</body>
+</html>
