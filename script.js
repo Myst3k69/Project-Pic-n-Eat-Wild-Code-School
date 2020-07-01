@@ -57,6 +57,8 @@ const showRecipes = (recipes) => {
     return recipes.map((recipe)=>{return `<div class="recette">
     <img src=${recipe.imageSrc}  alt="" >
     <h2 class="titre_recette">${recipe.title}</h2></a>
+     
+    
 </div>`}).join("");
     }
 
@@ -179,106 +181,3 @@ for (let checkbox of checkboxes)
 
 
 
-
-// const tmpRecipes = recipes
-     //   showRecipes(tmpRecipes)
-      //  recipeList.innerHTML = showRecipes(tmpRecipes);
-      //  showRecipes(recipes)
-
-
-
-/*
-  //Affichage des recettes filtres
-  for (let i=0;i<filters.length;i++)
-  {  
-      
-      console.log("Valeur de i : "+i);
-      for (let j=0;j<recipes.length;j++)
-      
-      {
-          console.log("Valeur de j : "+j);
-          console.log("valeur de filtre : "+filters[i]);
-          console.log("valeur de recipe : "+recipes[j].categories);
-         
-        
-          if (recipes[j].categories == filters[i]) 
-    
-          {
-              console.log(recipes[0]);
-              recipeList.innerHTML = `<div class="recette">
-              <img src=${recipes[j].imageSrc}  alt="" >
-              <h2 class="titre_recette">${recipes[j].title}</h2>
-          </div>`+recipeList.innerHTML
-
-          }
-          
-
-      }
-       foreach
-              
-            recipeList.innerHTML = showRecipes(tmpRecipes);
-      
-
-  }
-
-  // Fonction permettant d'enlever des recettes sur la homepage
-const hideRecipes = (trecipes,recipes) => {
-
-    console.log("Je suis dans la fonction hideRecipes et je vais afficher"+ tmprecipes3.length + " recettes");
-    showRecipes(trecipes);
-    console.log("Je suis dans la fonction hideRecipes et je vais enlever"+ recipes.length + " recettes");
-
-
-    return recipes.map((recipe)=>{return (""); }).join("")
-    
-}
-
-  */
-
-
-  /*
-
-  else {
-            filters = filters.filter((filter) => filter !== e.target.value);
-            
-           
-                console.log("Je viens de décocher un filtre :"+e.target.value);
-
-                
-            //Désaffichage des recettes [Filtres dessactivés]
-
-            for ( recipe of recipes)
-            {
-                
-                    console.log(recipe.categories);
-                  
-                    
-            
-                    
-                
-            if(filter==recipe.categories)
-
-                {   
-                   
-                     removeRecipes.push(recipe);
-                     console.log("Nb elements à retirer : "+removeRecipes.length);
-                     for (recipe of removeRecipes)
-                     {console.log("Recettes à retirer :"+recipe.title);}
-                   
-                }
-
-
-                 difference = tmpRecipes.filter(x => !removeRecipes.includes(x));
-
-                
-
-            }
-            
-            recipeList.innerHTML= showRecipes(difference);
-
-           tmpRecipes2=[];
-
-
-
-            }
-        */
