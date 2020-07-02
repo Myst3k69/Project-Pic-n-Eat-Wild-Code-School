@@ -84,8 +84,8 @@ const showRecipes = (tabRecettes) => {
   <a href="recipe.html"><img class="img_recette" src=${recipe.imageSrc}  alt="" ></a>
   <div class="middle">
   <div class="text"><a href="recipe.html">Détails</a></div></div> 
-  </div>
-  <h2 class="titre_recette">${recipe.title} <a class="heart" value="${recipe.id}"><i  class=" clickable far  fa-heart"  aria-hidden></i></a><a class="heartfull"><i  class=" clickable fa fa-heart"  aria-hidden></i></a></h2>`}
+  
+  <h2 class="titre_recette">${recipe.title} <a class="heart" value="${recipe.id}"><i  class=" clickable far  fa-heart"  aria-hidden></i></a><a class="heartfull"><i  class=" clickable fa fa-heart"  aria-hidden></i></a></h2></div>`}
   ).join("");
  
 
@@ -94,14 +94,49 @@ const showRecipes = (tabRecettes) => {
 
 }
 
-/*return `<div class="container">
-    <a href="recipe.html"><img class="img_recette" src=${recipe.imageSrc}  alt="" ></a>
-    <div class="middle">
-    <div class="text"><a href="recipe.html">Détails</a></div></div>
-    </div>
-    <h2 class="titre_recette">${recipe.title} <a class="heart" value="${recipe.id}"><i  class=" clickable far  fa-heart"  aria-hidden></i></a><a class="heartfull"><i  class=" clickable fa fa-heart"  aria-hidden></i></a></h2>`;
 
-};*/
+let heartclick=document.getElementsByClassName("heart");
+let unlikeHeart=document.getElementsByClassName("heartfull");
+
+
+const dislikeHeart = () => {
+
+ 
+  for (let i=0;unlikeHeart.length;i++)
+  
+  {
+    if (unlikeHeart[i] == undefined) { break;};
+    unlikeHeart[i].addEventListener("click", () => {
+  
+      
+  heartclick[i].style.display="initial";
+  unlikeHeart[i].style.display='none';
+  
+  
+    })
+  }
+  }
+
+
+const likeHeart = () => {
+
+
+for (let i=0;heartclick.length;i++)
+
+{
+  
+if (heartclick[i] == undefined) { break;};
+  heartclick[i].addEventListener("click", () => {
+
+    
+heartclick[i].style.display="none";
+unlikeHeart[i].style.display='initial';
+dislikeHeart();
+
+  })
+}
+}
+
 
 
 
@@ -123,7 +158,7 @@ tags[i].addEventListener("click", () => {
 recipeList.innerHTML = showRecipes(tagRecettes);
 // When the user clicks the button, open the modal 
   modal.style.display = "block";
-
+  likeHeart();
 
 });
 
