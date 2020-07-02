@@ -313,8 +313,23 @@ unlike();
 
 
 
+// ********* INTERACTIVE TAGS *********
 
 
+const tags= document.getElementsByClassName("buttonTags");
+
+
+for (let i=0; i< tags.length;i++)
+
+{
+tags[i].addEventListener("click", () => {
+
+console.log("click sur boutton");
+
+
+});
+
+}
 
 
 
