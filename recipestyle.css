@@ -73,7 +73,7 @@ color:black;
 text-align: center;
 flex: 1;
 }
-.button {
+.buttonTags {
   font-family: 'Merriweather Sans', sans-serif;
   background-color: #F36C60; 
   color: white;
@@ -201,7 +201,7 @@ ol li:before {
 
 ul{
 	
-	list-style-type: circle;
+	list-style-type: none;
 }
 
 .tool_1 {
@@ -386,6 +386,134 @@ footer {
   background-color:#F08080;
   }
 
+  /* MODAL */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 35%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #F36C60;
+  color: white;
+}
+
+.modal-body {
+  padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #F36C60;
+  color: white;
+}
+
+/*Modal recette image*/
+.img_recette {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10%;
+  border: 2px solid #e64306;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+} 
+/* .text{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 10px;
+  text-decoration: none;
+} */
+
+.text {
+  background-color: #e74101;
+  color: white;
+  font-size: 14px;
+  padding: 10px 25px;
+  font-weight: bold;
+  margin: 10px;
+  width: 30px;
+  border-radius: 7%;
+  border-style: solid;
+  border-color: #ff6f61;
+}
+
+.text a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  padding: 15px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titre_recette {
+  text-align: center;
+  font-family: 'Euphoria Script', cursive; 
+  font-size: 20px;
+  margin: 0;
+}
+.heart{
+  display: none;
+}
+
+
   @media only screen and (max-width: 400px) {
 
 body {
@@ -461,7 +589,7 @@ color:black;
   text-align: center;
   flex: 1;
 }
-.button {
+.buttonTags {
   font-family: 'Merriweather Sans', sans-serif;
   background-color: #F36C60; 
   color: white;
@@ -796,8 +924,6 @@ footer {
   {
   color: white;
   background-color: #F08080;
-  
-  
   }
   
   .instagram {
@@ -811,77 +937,26 @@ footer {
   background-color:#F08080;
   
   }
+  .img_recette {
+    width: 75px;
+    height: 75px;
 }
 
-
-/* MODAL */
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+.titre_recette {
+  text-align: center;
+  font-family: 'Euphoria Script', cursive; 
+  font-size: 10px;
 }
 
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  float: right;
-  font-size: 28px;
+.text {
+  font-size: 10px;
+  padding: 8px 8px;
   font-weight: bold;
+  margin: 10px;
 }
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+.container{
+  padding: 5px;
 }
+  }
 
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
 
