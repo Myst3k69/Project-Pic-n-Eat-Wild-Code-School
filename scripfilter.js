@@ -76,46 +76,22 @@ const liked=document.getElementsByClassName("heartfull");
 
 
 const favRecipes = [];
+let filters = [];
 
+// Affichage tableau favRecipes
+const showFav = () => {
+    console.log("Debut de la fonction showFav");
 
-console.log("FAVORI :" +recipes[1].fav);
-
-// Fonction permettant l'affichage des favoris sur la homepage
-const showFavRecipes = (recipes) => {
-
-    return recipes.map((recipe)=>{ 
-        
-        
-        return `<div class="recette">
-    <div class="container">
-    <a href="recipe.html"><img class="img_recette" src=${recipe.imageSrc}  alt="" ></a>
-    <div class="middle">
-    <div class="text"><a href="recipe.html">Détails</a></div></div>
-    </div>
-    <h2 class="titre_recette">${recipe.title} <a class="heartfav" value="${recipe.id}"><i  class=" clickable fa fa-heart"  aria-hidden></i></a></h2>
+    for (let i=0;i<recipes.length;i++) 
+    {
     
-</div>`}).join("");
-    }
-
-
-    //*** 
-const showFiltRecipes = (recipes) => {
-
-    return recipes.map((recipe)=>{ 
-        
-        
-        return `<div class="recette">
-    <div class="container">
-    <a href="recipe.html"><img class="img_recette" src=${recipe.imageSrc}  alt="" ></a>
-    <div class="middle">
-    <div class="text"><a href="recipe.html">Détails</a></div></div>
-    </div>
-    <h2 class="titre_recette">${recipe.title} <a class="heartfav" value="${recipe.id}"><i  class=" clickable far fa-heart"  aria-hidden></i></a></h2>
+    console.log("Title :  " + recipes[i].title + " FAV" + recipes[i].fav);
     
-</div>`}).join("");
     }
-
-
+    
+    }
+    
+    
 
 
 
@@ -133,44 +109,33 @@ const showRecipes = (recipes) => {
 </div>`}).join("");
     }
 
+    // Fonction permettant l'affichage des recettes sur la homepage
+    const showFavRecipes = (recipes,fav) => {
 
+        return recipes.map((recipe)=>{
+            
+            if(recipe.fav==fav)
 
+            {
+            return `<div class="recette">
+        <div class="container">
+        <a href="recipe.html"><img class="img_recette" src=${recipe.imageSrc}  alt="" ></a>
+        <div class="middle">
+        <div class="text"><a href="recipe.html">Détails</a></div></div>
+        </div>
+        <h2 class="titre_recette">${recipe.title} <a class="heart" value="${recipe.id}"><i  class=" clickable far  fa-heart"  aria-hidden></i></a><a class="heartfull"><i  class=" clickable fa fa-heart"  aria-hidden></i></a></h2>
+        
+    </div>`}}).join("");
 
     
-    recipeList.innerHTML = showRecipes(recipes);
-    
-let filters = [];
-
-
-
-// Unlike a recipe 
-
-
-const unlike = () => {
-    
-    
-    for (let i=0;i< favHeart.length;i++)
-
-    {
-    
-    
-    favHeart[i].addEventListener("click", (e) =>
-    
-    
-    {
-    
-    
-    
-    recipes[i].fav=false;
-    recette[i].style.display='none';
-    
-    
-})}
 
 }
+        
 
-
-
+  
+ // On Affiche les recettes dans la page HTML   
+recipeList.innerHTML = showRecipes(recipes);
+    
 
 // Récupération des noms des catégories qui sont actives
 const checkboxes = document.getElementsByTagName("input");
@@ -190,7 +155,26 @@ for (let checkbox of checkboxes) {
 
         const tmpRecipes = filters.length > 0 ? filterRecipes(recipes) : recipes;
         
-        recipeList.innerHTML = showFiltRecipes(tmpRecipes);
+        recipeList.innerHTML = showRecipes(tmpRecipes);
+       // On met à jour les recettes likés
+       likeRecipe();
+
+      /* // On affiche les favoris parmi les recettes filtrees
+       for (let i=0; i<recipes.length;i++)
+       {
+        let valueID =liked[i].getAttribute("value");
+        if(recipes[i].fav==true && recipes[i].id==valueID)
+
+        {
+           likedRecette[i].style.display='none';
+           liked[i].style.display='initial';
+
+       }
+
+    }*/
+    
+
+
     });
 }
 
@@ -207,8 +191,7 @@ function filterRecipes(arr){
         //console.log("recipe current", recipe);
         let hasfound = false;
         for(category of recipe.categories){
-            console.log("categories", category);
-            console.log("filters", filters);
+            
             if(filters.indexOf(category) > -1){
                 if((!hasfound)  ){
                     tmp.push(recipe);
@@ -219,77 +202,146 @@ function filterRecipes(arr){
     
     }
     console.log(tmp);
+    
     return tmp;
 }
-
-
-
 
 
 
 // Like on homepage
 
 const likeRecipe = () => {
+   
 for (let i=0;i< likedRecette.length;i++)
 
 {
     liked[i].style.display='none';
     
+
+  // On gère le cas du like  
 likedRecette[i].addEventListener("click", (e) => {
     
     
     let value =likedRecette[i].getAttribute("value");
-    favRecipes.push( recipes[value]);
+    
     recipes[i].fav=true;
     likedRecette[i].style.display='none';
     liked[i].style.display='initial';
+  
+
    // savefavRecipes();
     
     
-    // Unlike on homepage
-    for (let i=0;i< liked.length;i++)
+       for (let i=0;i< liked.length;i++)
 
 {
     
-    
+  // On gère le cas du unlike  
 liked[i].addEventListener("click", (e) => {
     
-    
+    recipes[i].fav=false;
     liked[i].style.display='none';
     likedRecette[i].style.display='initial';
-   console.log("je souhaite unliker sur la homepage");
-   favRecipes.splice(i,1);
-    
-    
+   console.log("je souhaite unliker sur la homepage sur i :"+i);
+ 
+  
+   
+     
     
         
 
-})}
-        
+})} 
 
 })}
 }
 
+
+        
+// On met à jour les recettes likés
 likeRecipe();
 
 
-// Get the button that opens the favorites
-let openModal = document.getElementById("myBtn");
+// Unlike a recipe 
 
 
+const unlike = () => {
+    
+    
+    for (let i=0;i< liked.length;i++)
 
+    {
+    
+    
+    liked[i].addEventListener("click", (e) =>
+    
+    
+    {
+    
+    
+    
+    recipes[i].fav=false;
+    recette[i].style.display='none';
+    
+    
+    
+})}
 
-// When the user clicks the button, open the favorite recipes
-openModal.onclick = function() {
-  //modal.style.display = "block";
-
-
-
-  
-  recipeList.innerHTML=showFavRecipes(favRecipes);
-
-    unlike();
 }
+
+
+
+
+
+
+// Get the button that opens the favorites
+let favSection = document.getElementById("myBtn");
+favSection.onclick = function() {
+recipeList.innerHTML=showFavRecipes(recipes,true);
+//likeRecipe();
+
+for (let i=0;i< likedRecette.length;i++)
+
+{
+likedRecette[i].style.display='none';
+   
+}
+
+unlike();
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
