@@ -391,6 +391,8 @@ footer {
 /* Effects on image */
 /*Section recettes*/
 
+
+
 .clickable {
 
   cursor: pointer;
@@ -462,9 +464,8 @@ opacity: 0.8;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
+  padding-top: 50px; /* Location of the box */
+  
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -522,7 +523,9 @@ opacity: 0.8;
 }
 
 .modal-body {
-  padding: 2px 16px;}
+  padding: 2px 16px;
+overflow: scroll;
+}
 
 .modal-footer {
   padding: 2px 16px;
