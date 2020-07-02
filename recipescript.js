@@ -83,10 +83,10 @@ const showRecipes = (tabRecettes) => {
   return tabRecettes.map( recipe =>  { return `<div class="container">
   <a href="recipe.html"><img class="img_recette" src=${recipe.imageSrc}  alt="" ></a>
   <div class="middle">
-  <div class="text"><a href="recipe.html">Détails</a></div></div>
+  <div class="text"><a href="recipe.html">Détails</a></div></div> 
   </div>
   <h2 class="titre_recette">${recipe.title} <a class="heart" value="${recipe.id}"><i  class=" clickable far  fa-heart"  aria-hidden></i></a><a class="heartfull"><i  class=" clickable fa fa-heart"  aria-hidden></i></a></h2>`}
-  );
+  ).join("");
  
 
 
