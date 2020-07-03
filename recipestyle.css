@@ -387,14 +387,85 @@ footer {
   }
 
   /* MODAL */
+
+/* Effects on image */
+/*Section recettes*/
+
+
+
+.clickable {
+
+  cursor: pointer;
+}
+
+
+.fa-heart {
+
+  color: #e74101;
+}
+
+/* TEST EFFET SURVOL SOURI IMAGES RECETTE  */
+
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+ 
+  transform: translate(0px ,-160px);
+
+  
+}
+
+.container:hover .img_recette {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color:#e74101;
+  color: white;
+  font-size: 20px;
+  padding: 10px 25px!important;
+  font-weight: bold;
+  flex : 1;
+  width:65px!important;
+  border-radius: 7%;
+  border-style: solid;
+  border-color:#ff6f61 ;
+  
+ 
+}
+
+.text a {
+  text-decoration: none;
+  color:white;
+  
+}
+
+
+
+.text:hover{
+
+color:#ff6f61;
+opacity: 0.8;
+
+}
+
+/* Fin test effet */
+
+
+
+
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
+  padding-top: 50px; /* Location of the box */
+  
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -452,7 +523,9 @@ footer {
 }
 
 .modal-body {
-  padding: 2px 16px;}
+  padding: 2px 16px;
+overflow: scroll;
+}
 
 .modal-footer {
   padding: 2px 16px;
@@ -469,6 +542,7 @@ footer {
   border: 2px solid #e64306;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
+  
 } 
 /* .text{
   font-family: 'Merriweather Sans', sans-serif;
@@ -501,6 +575,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom:5%;
+  
 }
 
 .titre_recette {
@@ -508,8 +584,9 @@ footer {
   font-family: 'Euphoria Script', cursive; 
   font-size: 20px;
   margin: 0;
+  margin-top:-5%;
 }
-.heart{
+.heartfull{
   display: none;
 }
 
