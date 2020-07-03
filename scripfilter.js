@@ -8,9 +8,9 @@ const recipes = [
     },
     {
         id:1,
-        imageSrc: "images/energy-balls-aux-amandes.jpg",
+        imageSrc: "images/Coco2.png",
         title: "Energy balls",
-        categories: ["ENTREE"],
+        categories: ["DESSERT","VEGAN"],
         fav: false
     },
     {
